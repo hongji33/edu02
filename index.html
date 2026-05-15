@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Art Studio | 오션중학교 미술실</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
+        
+        body { font-family: 'Noto Sans KR', sans-serif; scroll-behavior: smooth; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .gradient-bg { background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo & Title Section -->
+            <div class="flex items-center space-x-3">
+                <img src="./images/logo.png" alt="Ocean Logo" class="h-10 w-auto object-contain" onerror="this.src='https://via.placeholder.com/40?text=O'">
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold text-indigo-900 leading-tight">오션 동영상 컨텐츠 제작하기</span>
+                    <span class="text-xs text-indigo-400 font-medium tracking-tight">OCEAN ART STUDIO</span>
+                </div>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="hover:text-indigo-600 transition">소개</a>
+                <a href="#classes" class="hover:text-indigo-600 transition">미술 수업</a>
+                <a href="#club" class="hover:text-indigo-600 transition">영상 동아리</a>
+                <a href="#youtube" class="hover:text-indigo-600 transition">유튜브 채널</a>
+            </div>
+            <button class="md:hidden"><i class="fa-solid fa-bars text-xl text-indigo-900"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="h-screen flex items-center justify-center gradient-bg pt-20">
+        <div class="max-w-4xl px-6 text-center">
+            <span class="inline-block px-4 py-1 mb-6 border border-indigo-200 rounded-full text-indigo-600 text-sm font-semibold tracking-wider">OCEAN MIDDLE SCHOOL ART TEACHER</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight serif text-indigo-950">
+                캔버스와 프레임을 오가는<br>
+                <span class="text-indigo-600">예술적 탐험</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-10 text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                안녕하세요! 오션중학교에서 미술을 가르치고,<br>
+                학생들과 함께 영상을 제작하며 함께 성장해가는 미술 선생님입니다.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#youtube" class="bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg flex items-center justify-center">
+                    <i class="fa-brands fa-youtube mr-2 text-xl"></i> 유튜브 보러가기
+                </a>
+                <div class="flex gap-2">
+                    <a href="#club" class="flex-1 bg-white text-indigo-600 px-6 py-4 rounded-xl font-bold border border-indigo-100 hover:bg-indigo-50 transition shadow-sm text-center">
+                        동아리 활동 보기
+                    </a>
+                    <a href="#footer" class="flex-1 bg-indigo-50 text-indigo-700 px-6 py-4 rounded-xl font-bold hover:bg-indigo-100 transition border border-indigo-100 text-center flex items-center justify-center">
+                        <i class="fa-solid fa-paper-plane mr-2"></i> 질문하기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="w-full h-96 bg-gray-200 rounded-3xl overflow-hidden shadow-2xl">
+                        <!-- Placeholder for Teacher's Image -->
+                        <div class="w-full h-full flex items-center justify-center bg-indigo-50">
+                            <i class="fa-solid fa-palette text-8xl text-indigo-200"></i>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-indigo-600 text-white p-8 rounded-2xl hidden md:block shadow-xl">
+                        <p class="text-2xl font-bold">100+</p>
+                        <p class="text-sm opacity-80">함께한 아티스트 학생들</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 serif text-indigo-900">우리의 일상이 예술이 되는 공간</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        오션중학교 미술실은 단순히 그림을 그리는 곳을 넘어, 자신의 생각을 표현하고 소통하는 '크리에이티브 스튜디오'를 지향합니다. 중학교 시절의 순수한 감성을 다양한 매체로 담아내는 과정을 돕고 있습니다.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start border-l-4 border-indigo-200 pl-4">
+                            <div>
+                                <h4 class="font-bold text-indigo-900">함께 성장하는 크리에이터</h4>
+                                <p class="text-sm text-gray-500">저 또한 초보 유튜버로서 학생들과 함께 배우고 시도하는 과정을 즐깁니다.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start border-l-4 border-indigo-200 pl-4">
+                            <div>
+                                <h4 class="font-bold text-indigo-900">디지털과 아날로그의 융합</h4>
+                                <p class="text-sm text-gray-500">전통 미술의 가치와 최신 영상 기술의 결합을 연구합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 serif">Art Classes</h2>
+                <p class="text-gray-500 italic">오션중학교 미술 수업 들여다보기</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-600">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">순수 미술 탐구</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">소묘, 수채화부터 판화까지 기초 조형 능력을 키우고 자신만의 색깔을 찾아가는 시간입니다.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">디자인 & 타이포그래피</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">시각적인 의사소통 방법을 배우고, 일상 속 디자인의 중요성을 직접 체험해 봅니다.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-6 text-green-600">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">현대 미술 비평</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">작품 뒤에 숨겨진 의미를 읽어내고, 창의적인 시각으로 세상을 바라보는 눈을 기릅니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Section -->
+    <section id="club" class="py-24 bg-indigo-900 text-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-8 serif">유튜브 동영상 제작 동아리</h2>
+                    <p class="text-indigo-200 mb-8 leading-relaxed">
+                        카메라 앵글 하나, 편집 점 하나에 정성을 담습니다. 우리 동아리는 기획부터 촬영, 편집까지 전 과정을 학생들이 주도하여 직접 자신들의 이야기를 프레임 속에 담아냅니다.
+                    </p>
+                    <ul class="space-y-4 mb-10 text-indigo-100">
+                        <li class="flex items-center"><i class="fa-solid fa-video mr-3 text-indigo-400"></i> 스마트폰을 활용한 고퀄리티 촬영 기법</li>
+                        <li class="flex items-center"><i class="fa-solid fa-scissors mr-3 text-indigo-400"></i> 스토리보드 작성과 창의적 편집 로직</li>
+                        <li class="flex items-center"><i class="fa-solid fa-bullhorn mr-3 text-indigo-400"></i> 미디어 리터러시와 저작권 교육</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-indigo-800 h-64 rounded-2xl flex items-center justify-center shadow-inner">
+                        <i class="fa-solid fa-clapperboard text-4xl opacity-20"></i>
+                    </div>
+                    <div class="bg-indigo-800 h-64 rounded-2xl flex items-center justify-center shadow-inner mt-8">
+                        <i class="fa-solid fa-film text-4xl opacity-20"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Section -->
+    <section id="youtube" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-block p-4 bg-red-50 rounded-full mb-8">
+                <i class="fa-brands fa-youtube text-5xl text-red-600"></i>
+            </div>
+            <h2 class="text-4xl font-bold mb-6 serif text-gray-900 italic">"Step by Step, Together"</h2>
+            <p class="text-gray-600 mb-10 max-w-xl mx-auto">
+                초보 유튜버 선생님의 우당탕탕 성장 일기이자, 미술 수업 자료 창고입니다. 
+                부족한 실력이지만 '시작이 반'이라는 마음으로 꾸준히 올리고 있어요. 
+            </p>
+            <div class="aspect-video w-full rounded-3xl overflow-hidden shadow-2xl bg-gray-100 mb-12 flex items-center justify-center text-gray-400">
+                <i class="fa-solid fa-play text-6xl"></i>
+            </div>
+            <a href="#" class="inline-block border-2 border-red-600 text-red-600 px-10 py-4 rounded-xl font-bold hover:bg-red-600 hover:text-white transition">
+                채널 구경하러 가기
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="py-12 bg-gray-100 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-indigo-900 font-bold serif text-xl mb-4">Ocean Art Studio</p>
+            <p class="text-gray-500 text-sm mb-6">오션중학교 미술 선생님 & 유튜브 동아리</p>
+            <div class="flex justify-center space-x-6 mb-8 text-gray-400">
+                <a href="#" class="hover:text-indigo-600 transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-red-600 transition"><i class="fa-brands fa-youtube text-xl"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fa-solid fa-envelope text-xl"></i></a>
+            </div>
+            <p class="text-xs text-gray-400">&copy; 2024 Ocean Middle School Art Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
